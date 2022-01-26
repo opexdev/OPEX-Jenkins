@@ -6,8 +6,8 @@ services:
       args:
         - HOST_DOCKER_GID=998
     ports:
-      - '8080:8080'
-      - '50000:50000'
+      - '127.0.0.1:8080:8080'
+      - '127.0.0.1:50000:50000'
     volumes:
       - jenkins_home:/var/jenkins_home
       - /usr/bin/docker:/usr/bin/docker
