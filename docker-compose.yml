@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        - DOCKER_GID_IN_HOST=998
+        - HOST_DOCKER_GID=998
     ports:
       - '8080:8080'
       - '50000:50000'
