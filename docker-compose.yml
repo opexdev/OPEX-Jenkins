@@ -6,6 +6,8 @@ services:
       context: .
       args:
         - HOST_DOCKER_GID=998
+    environment:
+      - JAVA_OPTS=-Xmx256m
     ports:
       - '8080:8080'
       - '50000:50000'
